@@ -9,7 +9,7 @@ request.send();
 request.onload=function(){
     var data = JSON.parse(request.response)
     for(i=0;i<data.length;i++){
-        console.log((i+1)+"."+data[i].flag)
+        console.log((i+1)+"."+"Flag: "+data[i].flag)
         console.log(data[i].name+"-"+data[i].region+","+data[i].subregion+","+data[i].population)
     }
 }
